@@ -2,7 +2,7 @@
 	"DFP": {
 		"stages": [
 			{
-				"module_class": "antuit.dfp.iom.LoadingSparkDataframe",
+				"module_class": "antuit.dfp.io.LoadingSparkDataframe",
 				"params": {
 					"input_name": "{input_df_path}",
 					"file_type": "parquet",
@@ -62,7 +62,7 @@
 				}
 			},
 			{
-				"module_class": "antuit.dfp.iom.StoringSparkDataframe",
+				"module_class": "antuit.dfp.io.StoringSparkDataframe",
 				"params": {
 					"output_name": "{forecast_out_time_series}",
 					"file_type": "parquet",
