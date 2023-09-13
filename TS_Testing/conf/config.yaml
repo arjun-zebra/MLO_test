@@ -1,7 +1,7 @@
 hydra:
     mode: MULTIRUN
     sweep:
-      dir: /dbfs/FileStore/MLO_Test_Temp/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+      dir: /dbfs/mnt/qa1datamartstdsandbox/qa1datamartstdsandbox-ds-store-std-sandbox-rw/ML_Ops_Exp_arjun/multirun/${now:%Y-%m-%d}/Exp_1
       subdir: ${hydra.job.override_dirname}
     sweeper:
         params:

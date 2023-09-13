@@ -23,14 +23,14 @@ def my_app(cfg : DictConfig) -> None:
     ############# DFP specific block
     creation_did = cfg.creation_did
     window_size = int(cfg.window_size)
-    init_dir = "/Users/chirag.lodaya@zebra.com/experiment_1_TS"
+    init_dir = "/Users/arjun.gullbadhar@zebra.com/experiment_1_TS"
     # init_dir = init_dir.replace("/dbfs","dbfs:")
     runtime_oppath = HydraConfig.get().runtime.output_dir
     runtime_oppath = runtime_oppath.replace("/dbfs","dbfs:")
     print(creation_did)
     print(window_size)
 
-    base_path = "dbfs:/FileStore/MLO_Test_Temp"
+    base_path = "dbfs:/mnt/qa1datamartstdsandbox/qa1datamartstdsandbox-ds-store-std-sandbox-rw"
 
 
     # change the input path before executing
@@ -40,7 +40,7 @@ def my_app(cfg : DictConfig) -> None:
     ts_model_path = f'{runtime_oppath}/Output_data/model'
 
 
-    git_root = '/Workspace/Repos/chirag.lodaya@zebra.com/MLO_test'
+    git_root = '/Workspace/Repos/arjun.gullbadhar@zebra.com/MLO_test'
     print(input_df_path)
     print(forecast_out_time_series)
 
